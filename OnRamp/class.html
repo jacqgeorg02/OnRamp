@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Class Exercise</title>
+<style>
+/* Below is the universal selector */
+
+* {
+    padding: 0px;
+    margin: 0px;
+} 
+
+/* Please note, your font-sizes MUST be declared in ems!!!! */
+body {
+    background:cornsilk;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:96%;
+    background-image: url(images/golfball1.png);
+    background-attachment: fixed;
+    
+}
+  
+ul, ol, dl {
+    /* margin-left: 20px; */
+    margin: 0 0 10px 20px;    
+    /* top right bottom left  trbl */
+}
+
+    /* The comment tag in CSS is different from the comment tag in html */
+h1 {
+    color:coral;
+    font-size:2.5em;
+}
+h2 {
+    /* color: black; */
+    /* color: #000000; */
+    /* #666 = #666666 */
+    /* hexadecimal colors start from zero and get lighter -- start from zero - 9 and then a, b, c, d, e, f, */
+    /* color: #ddd; */
+    /* r g b red green blue, so ff0000 is red but no green and no blue */
+
+    /* color:#ff0000; */
+    color: #aa0000;
+    font-size:2em;
+}
+h3 {
+    color: #005500;
+    font-size:1.5em;
+}
+
+h1, h2, h3 {
+    margin-bottom: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+img {
+    float: right;
+    width: 300px;
+    /* Margins are OUTSIDE the element while padding is INSIDE the element. */
+    /* margin-left: 20px; */
+    margin: 0 0 20px 20px;
+
+    
+    padding: 30px;     /*30px top, 30px right, 30px bottom, 30px left*/
+    /* When declaring a border,  declare three values, separated by a space*/
+    border:cornflowerblue 10px solid;
+}
+/* When defining a width for your image, ONLY use width or ONLY use height -- not both!!! Or the image will end up distorted  */
+/* Selector {
+    property: value;
+}
+That's the punctuation for CSS
+} */
+div#wrapper {
+    width:940px;
+    /* To center a box, use the margin property with the values below */
+    /* We have 4 values: top, right, bottom, left */
+    /* Margins are OUTSIDE of the element. */
+    /* Padding is INSIDE the element. */
+    margin: 0 auto 0 auto;
+    background: #eee;
+    padding:20px;
+    background:rgba(240, 240, 240, .9);
+    overflow:hidden;
+}
+p {
+margin-bottom: 20px;
+}
+
+hr {
+    margin: 20px 0;
+}
+/* If I don't repeat it, it's 20px top and bottom 0 px right and left */
+
+blockquote {
+    font-size:32px;
+    /* 1em = 16px, 1.5em = 24px, 2em = 32px, 2.5em = 40px */
+    font-size:2em;
+    border-left: 20px solid #666;
+    padding-left: 20px;
+    margin: 0 30px 20px 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style:italic;
+}
+dd {
+    margin-left: 20px;
+}
+a {
+    color:#005500;
+}
+
+</style>
+
+
+
+
+</head>
+<body>
+    <div id="wrapper">
+    <!-- There are 6 headlines that you can use in HTML -->
+    <h1 id="'top">This is our First Class Exercise in it161</h1>
+    <h2>This is my headline 2</h2>
+    <!-- Don't forget that the image tag self closes -->
+    <img src="images/kamala.jpg" alt="Kamala">
+    <!-- This is a comment tag -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu molestie magna. Morbi et eleifend libero. Phasellus at dictum tellus, <b>these words will display in bold, a heavier font weight</b> sit amet vulputate massa. Suspendisse turpis lectus, sollicitudin sed sollicitudin eget, faucibus sit amet libero. Vestibulum accumsan nunc a nisl venenatis rhoncus. Suspendisse convallis libero ut odio lacinia gravida. <strong>These words will be displayed in a bold weight, but this time, using the strong tag!!!</strong> Nam placerat ex nec ornare euismod. Ut volutpat magna dolor, vitae egestas mauris posuere quis. Vivamus aliquet auctor nulla, non euismod leo vehicula elementum. Sed mollis enim eget rutrum fringilla. Duis maximus sapien vitae rutrum ullamcorper. Maecenas a condimentum mauris.</p>
+    <h2>This is my headline 2</h2>
+    <p>Vestibulum condimentum ipsum sed diam euismod, id auctor mauris condimentum. <i>These words will be displayed italicized.</i>Morbi ac enim eget sem efficitur pretium eu a lectus. Mauris ornare vulputate tellus, vitae laoreet mi pretium non. <em>These words will also be displayed italicized; HOWEVER, it means that the content is "emphasized."</em>Phasellus accumsan pharetra est, sed venenatis lectus pretium vel. Nam faucibus turpis eu blandit efficitur. Vivamus sed fringilla mauris. Proin dolor orci, convallis vitae ipsum vitae, consequat lacinia nunc. Nulla non orci in libero scelerisque accumsan. Quisque vitae vulputate nunc. Aliquam erat volutpat. Ut enim dolor, commodo sed volutpat eget, iaculis nec odio. Cras rhoncus sit amet lorem sit amet ultricies. Duis ornare sem ut erat dictum, at scelerisque mauris tempus.</p>
+    <p>Phasellus accumsan pharetra est, sed venenatis lectus pretium vel. Nam faucibus turpis eu blandit efficitur. Vivamus sed fringilla mauris. Proin dolor orci, convallis vitae ipsum vitae, consequat lacinia nunc. Nulla non orci in libero scelerisque accumsan. Quisque vitae vulputate nunc. Aliquam erat volutpat. Ut enim dolor, commodo sed volutpat eget, iaculis nec odio. Cras rhoncus sit amet lorem sit amet ultricies. Duis ornare sem ut erat dictum, at scelerisque mauris tempus.</p>
+    <!-- You really do not want to use a break tag because you are now affecting the look and feel of your page. The look and feel of your page must be defined with CSS -->
+    <!-- <br> remove break because it interferes with style -->
+    <hr>
+    <!-- <br> -->
+    <blockquote>
+        "Phasellus accumsan pharetra est, sed venenatis lectus pretium vel. Nam faucibus turpis eu blandit efficitur. Vivamus sed fringilla mauris. Proin dolor orci, convallis vitae ipsum vitae, consequat lacinia nunc. Nulla non orci in libero scelerisque accumsan. Quisque vitae vulputate nunc. Aliquam erat volutpat."
+    </blockquote>
+    <!-- There are three types of lists - unordered, ordered and definition -->
+    <!-- When nesting a list, the "wines" li is NOT closed. The nested li is displayed -->
+    <h3>Shopping List using an unordered list</h3>
+    <ul>
+    <li>Milk</li>
+    <li>Eggs</li>
+    <li>Cheese
+    <ul>
+    <li>Cheddar</li>
+    <li>Provolone</li>
+    <li>Feta</li>
+    <li>Swiss</li>
+    </ul>
+    </li>
+    <li>Wine
+    <ul>
+        <li>Cabernet</li>
+        <li>Merlot</li>
+        <li>Malbec</li>
+        <li>Syrah</li>
+    </ul>
+    </li>
+    </ul>
+
+    <h3>Shopping List using an ordered list</h3>
+    <ol>
+    <li>Milk</li>
+    <li>Eggs</li>
+    <li>Cheese</li>
+    <li>Wine</li>
+    </ol>
+
+    <h3>My Definition List</h3>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HTML stands for Hypertext Markup Language, representing the structure of a web page.</dd>
+        <dt>CSS</dt>
+        <dd>CSS stands for Cascading Style Sheets, representing the look and feel (layout) of a web page.</dd>
+    </dl>
+    <h3>My List of Homework Assignments!</h3>
+    <ul>
+    <li><a href="">Ruth</a></li>
+    <li><a href="">Big</a></li>
+    <li><a href="">Wireframes and Sitemap</a></li>
+    <li><a href="">Form</a></li>
+    <li><a href="">Template</a></li>
+    <li><a href="">Final Project</a></li>
+    </ul>
+
+    <img src="images/kamala.jpg" alt="Kamala">
+
+    <h3>My Favorite Movies and Shows</h3>
+    <ul>
+    <li><i><a href="https://www.imdb.com/title/tt0101921/">Fried Green Tomatoes</a></i></li>
+    <li><i><a href="https://www.imdb.com/title/tt5912064/?ref_=nv_sr_srsg_0">Kim's Convenience</a></i></li>
+    <li><i><a href="https://www.imdb.com/title/tt3640276/?ref_=nv_sr_srsg_0">The Brokenwood Mysteries</a></i></li>
+    <li><i><a href="https://www.imdb.com/title/tt3502248/?ref_=fn_al_tt_1">Bosch</a></i></li>
+    </ul>
+    <p><i><b><a href="#top">Back to top!</a></b></i></p>
+<!--  -->
+</div>
+</body>
+</html>
